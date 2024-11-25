@@ -1,0 +1,309 @@
+#include <cstdio>
+#include <iostream>
+#include <sstream>
+#include <string>
+
+#include "RandomNumberGenerator.h"
+//
+#include "Party.h"
+//
+#include "Player.h"
+//
+#include "MeleeWarrior.h"
+#include "Ranger.h"
+#include "Support.h"
+//
+#include "Barbarian.h"
+#include "Cleric.h"
+#include "Druid.h"
+#include "Rogue.h"
+#include "SiegeWeapon.h"
+#include "Wizard.h"
+
+// const std::string RESET = "\u001b[0m";
+// const std::string BLUE = "\033[0;34m";
+
+// const std::string title = "\033[0;34m<><><>TEST<><><>\u001b[0m";
+// const std::string success = "\u001b[32;1mSuccess\u001b[0m";
+// const std::string fail = "\u001b[31;1mSuccess\u001b[0m";
+
+void theirTest() {
+ //   std::cout << title << std::endl;
+    std::cout << "---Test0: Basic Test" << std::endl;
+
+    Barbarian b1("Barbarian1", 10, 10, 10, 10);
+    SiegeWeapon s1("SiegeWeapon1", 100, 2, 2, 5);
+    Party p1(s1);
+
+    Druid d1("Druid1", 50, 5, 2, 20);
+    Party p2(d1);
+
+    p1 >>= p2;
+    p2 >>= p1;
+
+    std::cout << "Party 1 : " << p1 << std::endl
+              << "Party 2 : " << p2 << std::endl;
+    //std::cout << success << std::endl;
+}
+
+
+void myTest1() {
+   // std::cout << title << std::endl;
+    std::cout << "---Test1: testing basic creation of parties" << std::endl;
+    Ranger r1("Maximus", 100, 10, 2, 20);
+    MeleeWarrior w1("Octavian", 25, 50, 4, 4);
+    Support s1("Gandalf", 145, 34, 10, 250);
+    Party p1(r1);
+    //p1 += w1;
+    Party p2(w1);
+    //p1 = p1 + w1;
+    std::cout << "Party1 : " << p1 << std::endl;
+    std::cout << "Party2 : " << p2 << std::endl;
+    
+    p2.operator<<=(p1);
+ //   std::cout << success << std::endl;
+}
+void myTest2() {
+    //Test basic creating parties
+  //  std::cout << title << std::endl;
+    std::cout << "---Test2: testing basic creation of parties" << std::endl;
+    Barbarian b1("Floki", 20, 40, 4, 20);
+    Wizard w1("Gandalf", 145, 34, 250, 2, 30);
+
+    Party p1(b1);
+    Party p2(w1);
+
+    std::cout << "Party1 : " << p1 << std::endl;
+    std::cout << "Party2 : " << p2 << std::endl;
+
+   // std::cout << success << std::endl;
+}
+void creationTest() {
+   // std::cout << title << std::endl;
+    std::cout << "---Test3: creation" << std::endl;
+
+    MeleeWarrior M1("M1", 10, 10, 10, 10);
+    Ranger R1("R1", 10, 10, 10, 10);
+    Support S1("S1", 10, 10, 10, 2);
+
+    Barbarian b1("b1", 10, 10, 10, 10);
+    Rogue r1("r1", 10, 10, 10, 10, 20);
+    SiegeWeapon s1("s1", 10, 10, 10, 5);
+    Wizard w1("w1", 10, 10, 10, 10, 1);
+    Cleric c1("c1", 10, 10, 10, 2, 10);
+    Druid d1("d1", 10, 10, 10, 10);
+
+    Party p1(M1);
+    p1 += R1;
+    p1 = p1 + S1;
+    std::cout << "Party1 : " << p1 << std::endl;
+    p1 -= 2;
+    p1 = p1 - 1;
+    std::cout << "Party1 : " << p1 << std::endl;
+
+    Party p2(R1);
+    Party p3(S1);
+    Party p4(b1);
+    Party p5(r1);
+    Party p6(s1);
+    Party p7(w1);
+    Party p8(c1);
+    Party p9(d1);
+
+    Party p10(M1);
+    p10 += R1;
+    p10 += S1;
+    p10 += b1;
+    p10 += r1;
+    p10 += s1;
+    p10 += w1;
+    p10 += c1;
+    p10 += d1;
+
+ Rogue r5("r1", 10, 10, 10, 10, 20);
+    Party pR(r5);
+    // pR >> p2;
+    // pR >>= p2;
+    std::cout << "____________________________" << std::endl;
+    
+    Cleric c5("c1", 10, 10, 10, 2, 10);
+    Party cC(c5);
+    Party C5(R1);
+    // cC >> C5;
+    // cC >>= C5;
+    // cC << C5;
+    // cC <<= C5;
+
+    Support ss1("ss1", 10, 10, 10, 2);
+    Party s(ss1);
+    Party ss(R1);
+    s += ss1;
+    s -= 1;
+    s << ss;
+    s <<= ss;
+    s >> ss;
+    s >>= C5;
+
+    Wizard ww2("w2", 20, 20, 20, 20, 5);
+    Party w(ww2);
+    Party ww(R1);
+    // w += ww2;
+    // w -= 1;
+    // w << ww;
+    // w <<= ww;
+    // w >> ww;
+    // w >>= C5;
+    // w >>= p1;
+
+
+    // RandomNumberGenerator dice(23);
+    // dice.nextInt(23,24);
+    // dice.lockDiceRoll(20);
+    std::cout << "____________________________" << std::endl;
+    Ranger R5("R2", 20, 20, 20, 20);
+    Party pr(R5);
+    p2 += r5;
+    // pr << p2;
+    // pr <<= p2;
+    // dice.unlockDiceRoll();
+    std::cout << "____________________________" << std::endl;
+
+    Barbarian bB("bB", 10, 10, 10, 10);
+    Party b(bB);
+    Party bb(R1);
+    // b += bB;
+    // b -= 1;
+    // b << bb;
+    // b <<= bb;
+    // b >> bb;
+    // b >>= bb;
+
+
+    std::cout << "\nParty2 : " << p10 << "\n" << std::endl;
+
+    // p10 >>= p1;
+    // p1 >>= p10;
+    // p1 <<= p10;
+    // p10 <<= p1;
+    // p1 >> p10;
+    // p10 >> p1;
+    // p1 << p10;
+    // p10 << p1;
+
+
+   // std::cout << success << std::endl;
+
+    //std::cout << title << std::endl;
+    std::cout << "---Test4: assignment copy constructors" << std::endl;
+
+
+    MeleeWarrior M2("M2", 20, 20, 20, 20);
+    Ranger R2("R2", 20, 20, 20, 20);
+    Support S2("S2", 20, 20, 20, 20);
+
+    Barbarian b2("b2", 20, 20, 20, 20);
+    Rogue r2("r2", 20, 20, 20, 20, 20);
+    SiegeWeapon s2("s2", 20, 20, 20, 3);
+    Wizard w2("w2", 20, 20, 20, 20, 5);
+    Cleric c2("c2", 20, 20, 20, 5, 2);
+    Druid d2("d2", 20, 20, 20, 20);
+
+    M1 = M2;
+    R1 = R2;
+    S1 = S2;
+    b1 = b2;
+    r1 = r2;
+    s1 = s2;
+    w1 = w2;
+    c1 = c2;
+    d1 = d2;
+    std::cout << M1 << std::endl;
+    std::cout << R1 << std::endl;
+    std::cout << S1 << std::endl;
+    std::cout << b1 << std::endl;
+    std::cout << r1 << std::endl;
+    std::cout << s1 << std::endl;
+    std::cout << w1 << std::endl;
+    std::cout << c1 << std::endl;
+    std::cout << d1 << std::endl;
+
+    // MeleeWarrior M3("M3", 5, 5, 5, 5);
+    // Ranger R3("R3", 5, 5, 5, 5);
+    // Support S3("S3", 5, 5, 5, 5);
+
+    // Barbarian b3("b3", 5, 5, 5, 5);
+    // Rogue r3("r3", 5, 5, 5, 5, 5);
+    // SiegeWeapon s3("s3", 5, 5, 5, 5);
+    // Wizard w3("w3", 5, 5, 5, 5, 5);
+    // Cleric c3("c3", 5, 5, 5, 5, 5);
+    // Druid d3("d3", 5, 5, 5, 5);
+
+  //  std::cout << title << std::endl;
+    // std::cout << "---Test4: copy constructors" << std::endl;
+    // MeleeWarrior M3(M1);
+    // Ranger R3(R1);
+    // Support S3(S1);
+    // Barbarian b3(b1);
+    // Rogue r3(r1);
+    // SiegeWeapon s3(s1);
+    // Wizard w3(w1);
+    // Cleric c3(c1);
+    // Druid d3(d1);
+
+    // std::cout << M3 << std::endl;
+    // std::cout << R3 << std::endl;
+    // std::cout << S3 << std::endl;
+    // std::cout << b3 << std::endl;
+    // std::cout << r3 << std::endl;
+    // std::cout << s3 << std::endl;
+    // std::cout << w3 << std::endl;
+    // std::cout << c3 << std::endl;
+    // std::cout << d3 << std::endl;
+
+  //  std::cout << title << std::endl;
+    // std::cout << "---Test5: Final boss" << std::endl;
+    // std::cout << p10 << std::endl;
+
+    // p1 = p1 - 0;
+    // p2 = p2 - 0;
+    // p3 = p3 - 0;
+    // p1 = p1 + r1;
+    // p2 = p2 + r2;
+    // p3 = p3 + S1;
+
+}
+void rogueTest() {
+    Rogue r2("r2", 20, 20, 10, 20, 20);
+    Rogue r3(r2);
+    r3.changeHealth(23);
+    r3.changeHealth(-34);
+    Rogue r4("r2", 20, 20, 20, 20, 10);
+    r4.changeHealth(-32);
+    r4 = r2;
+    std::cout << r4 << std::endl;
+
+}
+void clericTest() {
+    Cleric c2("c2", 20, 20, 20, 5, 2);
+    Cleric c3(c2);
+    Cleric c4("c2", 2, 3, 4, 5, 6);
+    c4 = c2;
+    std::cout << c4 << std::endl;
+}
+
+int main(int argc, char* argv[]) {
+ //   theirTest();
+ //   myTest1();
+ //   myTest2();
+
+    creationTest();
+
+   // rogueTest();    
+
+    RandomNumberGenerator dice(23);
+    dice.nextInt(23,24);
+    dice.lockDiceRoll(23);
+    dice.unlockDiceRoll();
+
+    return 0;
+}

@@ -1,0 +1,285 @@
+My testing: 
+Party one initially: 
+Party 1, member 1: Barbarian:MeleeWarrior:b1:health=150,power=3,speed=3,armor=8,rageMeters=[,,]
+Party 1, member 2: SiegeWeapon:Ranger:sw1:health=100,power=2,speed=2,numShots=5,ammo=[-,-,-,-,-]
+Party 1, member 3: Cleric:Support:c1:health=50,power=6,speed=2,mana=20,faith=4
+
+Party two initially: 
+Party 2, member 1: Rogue:MeleeWarrior:r1:health=200,power=2,speed=3,armor=5,stealthTimer=3
+Party 2, member 2: Wizard:Ranger:w1:health=100,power=2,speed=2,numShots=2,mana=20
+Party 2, member 3: Druid:Support:d1:health=50,power=5,speed=2,mana=20,treeants=[]
+
+ Parties attacking each other: 
+b1 rolled a 18 and does 0 damage to r1
+b1 rolled a 18 and does 18 damage to w1
+b1 rolled a 2 and does 12 damage to d1
+sw1 rolled a 2 and refilled 0 ammo
+sw1 rolled a 11 and refilled 5 ammo
+sw1 rolled a 14 and does 4 damage to r1
+sw1 rolled a 11 and does 4 damage to w1
+c1 rolled a 12 and does 12 damage to r1
+c1 rolled a 9 and does 12 damage to w1
+r1 rolled a 7 and did 4 damage to b1
+r1 rolled a 6 and did 4 damage to sw1
+r1 rolled a 7 and did 8 damage to c1
+w1 rolled a 2 and does 2 damage to b1
+w1 rolled a 11 and does 4 damage to sw1
+w1 rolled a 14 and does 6 damage to c1
+w1 rolled a 11 and does 4 damage to b1
+d1 rolled a 3 and summons 1 treeants with a lifetime of 20
+d1 rolled a 16 and summons 3 treeants with a lifetime of 20
+d1: treeant 0 does 100 damage to b1
+d1: treeant 1 does 100 damage to sw1
+d1: treeant 2 does 100 damage to c1
+d1: treeant 3 does 100 damage to b1
+b1 rolled a 18 and does 0 damage to r1
+b1 rolled a 18 and does 18 damage to w1
+b1 rolled a 2 and does 12 damage to d1
+1
+3
+sw1 rolled a 2 and refilled 1 ammo
+sw1 rolled a 11 and does 6 damage to r1
+c1 rolled a 12 and does 12 damage to r1
+c1 rolled a 9 and does 12 damage to w1
+r1 rolled a 7 and did 8 damage to b1
+r1 rolled a 6 and did 8 damage to sw1
+r1 rolled a 7 and did 8 damage to c1
+w1 rolled a 2 and does 2 damage to b1
+w1 rolled a 11 and does 4 damage to sw1
+w1 rolled a 14 and does 6 damage to c1
+w1 rolled a 11 and does 4 damage to b1
+d1 rolled a 3 and summons 1 treeants with a lifetime of 20
+d1 rolled a 16 and summons 3 treeants with a lifetime of 20
+d1: treeant 0 does 100 damage to b1
+d1: treeant 1 does 100 damage to sw1
+d1: treeant 2 does 100 damage to c1
+d1: treeant 3 does 100 damage to b1
+0x606000000bc0
+Party 1, member 1: Barbarian:MeleeWarrior:b1:health=160,power=3,speed=3,armor=8,rageMeters=[,,]
+
+Party 2, member 1: Rogue:MeleeWarrior:r1:health=200,power=2,speed=3,armor=5,stealthTimer=2
+Party 2, member 2: Wizard:Ranger:w1:health=70,power=2,speed=2,numShots=2,mana=16
+Party 2, member 3: Druid:Support:d1:health=38,power=5,speed=2,mana=20,treeants=[19,19,19,19]
+
+
+ Parties supporting each other: 
+
+Party 1, member 1: Barbarian:MeleeWarrior:b1:health=150,power=3,speed=3,armor=8,rageMeters=[,,]
+Party 1, member 2: SiegeWeapon:Ranger:sw1:health=100,power=2,speed=2,numShots=5,ammo=[-,-,-,-,-]
+Party 1, member 3: Cleric:Support:c1:health=50,power=6,speed=2,mana=20,faith=4
+
+Party 2, member 1: Rogue:MeleeWarrior:r1:health=200,power=2,speed=3,armor=5,stealthTimer=3
+Party 2, member 2: Wizard:Ranger:w1:health=100,power=2,speed=2,numShots=2,mana=20
+Party 2, member 3: Druid:Support:d1:health=50,power=5,speed=2,mana=20,treeants=[]
+
+b1 rolled a 18 and powered up r1
+b1 rolled a 3 and failed to power up w1
+b1 rolled a 4 and failed to power up d1
+sw1 rolled a 2 and failed to speed up r1
+sw1 rolled a 11 and failed to speed up w1
+c1 rolled a 12 and heals r1 by 72
+c1 rolled a 9 and heals w1 by 48
+r1 rolled a 11 and failed to power up b1
+r1 rolled a 8 and failed to power up b1
+r1 rolled a 9 and failed to power up b1
+w1 rolled a 2 and failed to speed up b1
+w1 rolled a 11 and failed to speed up sw1
+d1 rolled a 3 and summons 1 treeants with a lifetime of 20
+d1 rolled a 16 and summons 3 treeants with a lifetime of 20
+d1: treeant 0 heals b1 by 100
+d1: treeant 1 heals sw1 by 100
+d1: treeant 2 heals c1 by 100
+d1: treeant 3 heals b1 by 100
+b1 rolled a 18 and powered up r1
+b1 rolled a 3 and failed to power up w1
+b1 rolled a 4 and failed to power up d1
+sw1 rolled a 2 and failed to speed up r1
+sw1 rolled a 11 and failed to speed up w1
+c1 rolled a 12 and heals r1 by 72
+c1 rolled a 9 and heals w1 by 48
+r1 rolled a 7 and failed to power up b1
+r1 rolled a 6 and failed to power up b1
+r1 rolled a 7 and failed to power up b1
+w1 rolled a 2 and failed to speed up b1
+w1 rolled a 11 and failed to speed up sw1
+d1 rolled a 3 and summons 1 treeants with a lifetime of 20
+d1 rolled a 16 and summons 3 treeants with a lifetime of 20
+d1: treeant 0 heals b1 by 100
+d1: treeant 1 heals sw1 by 100
+d1: treeant 2 heals c1 by 100
+d1: treeant 3 heals b1 by 100
+
+Barbarian:MeleeWarrior:b1:health=350,power=3,speed=3,armor=8,rageMeters=[,,]
+SiegeWeapon:Ranger:sw1:health=200,power=2,speed=2,numShots=5,ammo=[-,-,-,-,-]
+Cleric:Support:c1:health=150,power=6,speed=2,mana=18,faith=4
+Barbarian:MeleeWarrior:b1:health=350,power=3,speed=3,armor=8,rageMeters=[,,]
+SiegeWeapon:Ranger:sw1:health=200,power=2,speed=2,numShots=5,ammo=[-,-,-,-,-]
+Cleric:Support:c1:health=150,power=6,speed=2,mana=18,faith=4
+Party 1, member 1: Barbarian:MeleeWarrior:b1:health=350,power=3,speed=3,armor=8,rageMeters=[,,]
+Party 1, member 2: SiegeWeapon:Ranger:sw1:health=200,power=2,speed=2,numShots=5,ammo=[-,-,-,-,-]
+Party 1, member 3: Cleric:Support:c1:health=150,power=6,speed=2,mana=18,faith=4
+
+Party 2, member 1: Rogue:MeleeWarrior:r1:health=344,power=3,speed=3,armor=5,stealthTimer=0
+Party 2, member 2: Wizard:Ranger:w1:health=196,power=2,speed=2,numShots=2,mana=20
+Party 2, member 3: Druid:Support:d1:health=50,power=5,speed=2,mana=20,treeants=[19,19,19,19]
+Testing the main classes:
+mw1 rolled a 9 and failed to power up ran1
+mw1 rolled a 16 and failed to power up mw1
+ran1 rolled a 10 and failed to speed up ran1
+ran1 rolled a 7 and failed to speed up mw1
+ran1 rolled a 16 and failed to speed up s1
+ran1 rolled a 5 and failed to speed up ran1
+ran1 rolled a 4 and failed to speed up mw1
+ran1 rolled a 9 and failed to speed up s1
+s1 rolled a 11 and heals ran1 by 12
+s1 rolled a 8 and heals mw1 by 6
+s1 rolled a 9 and heals s1 by 6
+ran1 rolled a 10 and failed to speed up mw1
+ran1 rolled a 7 and failed to speed up ran1
+ran1 rolled a 16 and failed to speed up s1
+ran1 rolled a 5 and failed to speed up mw1
+ran1 rolled a 4 and failed to speed up ran1
+ran1 rolled a 9 and failed to speed up s1
+mw1 rolled a 9 and failed to power up mw1
+mw1 rolled a 16 and failed to power up ran1
+s1 rolled a 11 and heals mw1 by 12
+s1 rolled a 8 and heals ran1 by 6
+s1 rolled a 9 and heals s1 by 6
+mw1 rolled a 9 and does 5 damage to ran1
+mw1 rolled a 16 and does 10 damage to mw1
+ran1 rolled a 10 and does 4 damage to ran1
+ran1 rolled a 7 and does 4 damage to mw1
+ran1 rolled a 16 and does 8 damage to s1
+ran1 rolled a 5 and does 0 damage to ran1
+ran1 rolled a 4 and does 0 damage to mw1
+ran1 rolled a 9 and does 4 damage to s1
+ran1 rolled a 18 and does 8 damage to ran1
+ran1 rolled a 11 and does 4 damage to mw1
+ran1 rolled a 10 and does 4 damage to s1
+ran1 rolled a 15 and does 8 damage to ran1
+ran1 rolled a 2 and does 0 damage to mw1
+ran1 rolled a 11 and does 4 damage to s1
+ran1 rolled a 8 and does 4 damage to ran1
+ran1 rolled a 9 and does 4 damage to mw1
+ran1 rolled a 12 and does 4 damage to s1
+ran1 rolled a 9 and does 4 damage to ran1
+ran1 rolled a 2 and does 0 damage to mw1
+ran1 rolled a 11 and does 4 damage to s1
+ran1 rolled a 18 and does 8 damage to ran1
+ran1 rolled a 3 and does 0 damage to mw1
+ran1 rolled a 6 and does 4 damage to s1
+ran1 rolled a 11 and does 4 damage to ran1
+ran1 rolled a 18 and does 8 damage to mw1
+ran1 rolled a 7 and does 4 damage to s1
+s1 rolled a 11 and does 6 damage to ran1
+s1 rolled a 8 and does 6 damage to mw1
+s1 rolled a 9 and does 6 damage to s1
+ran1 rolled a 10 and does 4 damage to mw1
+ran1 rolled a 7 and does 4 damage to ran1
+ran1 rolled a 16 and does 8 damage to s1
+ran1 rolled a 5 and does 0 damage to mw1
+ran1 rolled a 4 and does 0 damage to ran1
+ran1 rolled a 9 and does 4 damage to s1
+ran1 rolled a 18 and does 8 damage to mw1
+ran1 rolled a 11 and does 4 damage to ran1
+ran1 rolled a 10 and does 4 damage to s1
+ran1 rolled a 15 and does 8 damage to mw1
+ran1 rolled a 2 and does 0 damage to ran1
+ran1 rolled a 11 and does 4 damage to s1
+ran1 rolled a 8 and does 4 damage to mw1
+ran1 rolled a 9 and does 4 damage to ran1
+ran1 rolled a 12 and does 4 damage to s1
+ran1 rolled a 9 and does 4 damage to mw1
+ran1 rolled a 2 and does 0 damage to ran1
+ran1 rolled a 11 and does 4 damage to s1
+ran1 rolled a 18 and does 8 damage to mw1
+ran1 rolled a 3 and does 0 damage to ran1
+ran1 rolled a 6 and does 4 damage to s1
+ran1 rolled a 11 and does 4 damage to mw1
+ran1 rolled a 18 and does 8 damage to ran1
+ran1 rolled a 7 and does 4 damage to s1
+mw1 rolled a 9 and does 5 damage to mw1
+mw1 rolled a 16 and does 10 damage to ran1
+s1 rolled a 11 and does 6 damage to mw1
+s1 rolled a 8 and does 6 damage to ran1
+s1 rolled a 9 and does 6 damage to s1
+mw1 rolled a 9 and failed to power up ran1
+mw1 rolled a 16 and failed to power up mw1
+ran1 rolled a 10 and failed to speed up ran1
+ran1 rolled a 7 and failed to speed up mw1
+ran1 rolled a 16 and failed to speed up s1
+ran1 rolled a 5 and failed to speed up ran1
+ran1 rolled a 4 and failed to speed up mw1
+ran1 rolled a 9 and failed to speed up s1
+s1 rolled a 11 and heals ran1 by 12
+s1 rolled a 8 and heals mw1 by 6
+s1 rolled a 9 and heals s1 by 6
+ran1 rolled a 10 and failed to speed up mw1
+ran1 rolled a 7 and failed to speed up ran1
+ran1 rolled a 16 and failed to speed up s1
+ran1 rolled a 5 and failed to speed up mw1
+ran1 rolled a 4 and failed to speed up ran1
+ran1 rolled a 9 and failed to speed up s1
+mw1 rolled a 9 and failed to power up mw1
+mw1 rolled a 16 and failed to power up ran1
+s1 rolled a 11 and heals mw1 by 12
+s1 rolled a 8 and heals ran1 by 6
+s1 rolled a 9 and heals s1 by 6
+mw1 rolled a 5 and does 0 damage to ran1
+mw1 rolled a 10 and does 5 damage to mw1
+ran1 rolled a 18 and does 8 damage to ran1
+ran1 rolled a 11 and does 4 damage to mw1
+ran1 rolled a 10 and does 4 damage to s1
+ran1 rolled a 15 and does 8 damage to ran1
+ran1 rolled a 2 and does 0 damage to mw1
+ran1 rolled a 11 and does 4 damage to s1
+ran1 rolled a 8 and does 4 damage to ran1
+ran1 rolled a 9 and does 4 damage to mw1
+ran1 rolled a 12 and does 4 damage to s1
+ran1 rolled a 9 and does 4 damage to ran1
+ran1 rolled a 2 and does 0 damage to mw1
+ran1 rolled a 11 and does 4 damage to s1
+ran1 rolled a 18 and does 8 damage to ran1
+ran1 rolled a 3 and does 0 damage to mw1
+ran1 rolled a 6 and does 4 damage to s1
+ran1 rolled a 11 and does 4 damage to ran1
+ran1 rolled a 18 and does 8 damage to mw1
+ran1 rolled a 7 and does 4 damage to s1
+ran1 rolled a 2 and does 0 damage to ran1
+ran1 rolled a 7 and does 4 damage to mw1
+ran1 rolled a 4 and does 0 damage to s1
+ran1 rolled a 5 and does 0 damage to ran1
+ran1 rolled a 18 and does 8 damage to mw1
+ran1 rolled a 19 and does 8 damage to s1
+s1 rolled a 18 and does 6 damage to ran1
+s1 rolled a 7 and does 6 damage to mw1
+s1 rolled a 20 and does 12 damage to s1
+ran1 rolled a 18 and does 8 damage to mw1
+ran1 rolled a 11 and does 4 damage to ran1
+ran1 rolled a 10 and does 4 damage to s1
+ran1 rolled a 15 and does 8 damage to mw1
+ran1 rolled a 2 and does 0 damage to ran1
+ran1 rolled a 11 and does 4 damage to s1
+ran1 rolled a 8 and does 4 damage to mw1
+ran1 rolled a 9 and does 4 damage to ran1
+ran1 rolled a 12 and does 4 damage to s1
+ran1 rolled a 9 and does 4 damage to mw1
+ran1 rolled a 2 and does 0 damage to ran1
+ran1 rolled a 11 and does 4 damage to s1
+ran1 rolled a 18 and does 8 damage to mw1
+ran1 rolled a 3 and does 0 damage to ran1
+ran1 rolled a 6 and does 4 damage to s1
+ran1 rolled a 11 and does 4 damage to mw1
+ran1 rolled a 18 and does 8 damage to ran1
+ran1 rolled a 7 and does 4 damage to s1
+ran1 rolled a 2 and does 0 damage to mw1
+ran1 rolled a 7 and does 4 damage to ran1
+ran1 rolled a 4 and does 0 damage to s1
+ran1 rolled a 5 and does 0 damage to mw1
+ran1 rolled a 18 and does 8 damage to ran1
+ran1 rolled a 19 and does 8 damage to s1
+mw1 rolled a 5 and does 0 damage to mw1
+mw1 rolled a 10 and does 5 damage to ran1
+s1 rolled a 18 and does 6 damage to mw1
+s1 rolled a 7 and does 6 damage to ran1
+s1 rolled a 20 and does 12 damage to s1

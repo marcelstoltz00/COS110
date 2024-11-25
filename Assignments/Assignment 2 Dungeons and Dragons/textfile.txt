@@ -1,0 +1,950 @@
+./main
+---Test3: creation
+Party1 : MeleeWarrior:M1:health=10,power=10,speed=10,armor=10
+Ranger:R1:health=10,power=10,speed=10,numShots=10
+Support:S1:health=10,power=10,speed=10,mana=2
+Party1 : MeleeWarrior:M1:health=10,power=10,speed=10,armor=10
+____________________________
+ss1 rolled a 6 and heals R1 by 10
+ss1 rolled a 11 and heals R1 by 20
+ss1 rolled a 12 and heals R1 by 20
+ss1 rolled a 5 and heals R1 by 10
+ss1 rolled a 14 and heals R1 by 20
+ss1 rolled a 3 and heals R1 by 10
+ss1 rolled a 8 and heals R1 by 10
+ss1 rolled a 5 and heals R1 by 10
+ss1 rolled a 20 and heals R1 by 30
+ss1 rolled a 1 and heals R1 by 0
+ss1 rolled a 6 and healsR1 by 10
+ss1 rolled a 11 and healsR1 by 20
+ss1 rolled a 12 and restored 4 mana
+ss1 rolled a 5 and healsR1 by 10
+ss1 rolled a 14 and healsR1 by 20
+ss1 rolled a 3 and healsR1 by 10
+ss1 rolled a 8 and healsR1 by 10
+ss1 rolled a 5 and restored 2 mana
+ss1 rolled a 20 and healsR1 by 30
+ss1 rolled a 1 and healsR1 by 0
+ss1 rolled a 6 and does 10 damage to R1
+ss1 rolled a 11 and does 10 damage to R1
+ss1 rolled a 12 and does 10 damage to R1
+ss1 rolled a 5 and does 0 damage to R1
+ss1 rolled a 14 and does 10 damage to R1
+ss1 rolled a 3 and does 0 damage to R1
+ss1 rolled a 8 and does 10 damage to R1
+ss1 rolled a 5 and does 0 damage to R1
+ss1 rolled a 20 and does 20 damage to R1
+ss1 rolled a 1 and does 0 damage to R1
+ss1 rolled a 14 and does 10 damage to R1
+ss1 rolled a 7 and does 10 damage to R1
+ss1 rolled a 2 and does 0 damage to R1
+ss1 rolled a 3 and does 0 damage to R1
+ss1 rolled a 14 and does 10 damage to R1
+ss1 rolled a 7 and does 10 damage to R1
+ss1 rolled a 6 and does 10 damage to R1
+ss1 rolled a 11 and does 10 damage to R1
+ss1 rolled a 6 and does 10 damage to R1
+ss1 rolled a 11 and does 10 damage to R1
+w2 rolled a 12 and failed to speed up R1
+w2 rolled a 1 and failed to speed up R1
+w2 rolled a 12 and failed to speed up R1
+w2 rolled a 9 and failed to speed up R1
+w2 rolled a 18 and sped up R1
+w2 rolled a 19 and sped up R1
+w2 rolled a 12 and failed to speed up R1
+w2 rolled a 17 and sped up R1
+w2 rolled a 8 and failed to speed up R1
+w2 rolled a 17 and sped up R1
+w2 rolled a 20 and sped up R1
+w2 rolled a 13 and sped up R1
+w2 rolled a 16 and sped up R1
+w2 rolled a 13 and sped up R1
+w2 rolled a 20 and sped up R1
+w2 rolled a 1 and failed to speed up R1
+w2 rolled a 20 and sped up R1
+w2 rolled a 13 and sped up R1
+w2 rolled a 2 and failed to speed up R1
+w2 rolled a 7 and failed to speed up R1
+w2 rolled a 12 and failed to speed up R1
+w2 rolled a 1 and failed to speed up R1
+w2 rolled a 12 and failed to speed up R1
+w2 rolled a 9 and failed to speed up R1
+w2 rolled a 18 and sped up R1
+w2 rolled a 19 and sped up R1
+w2 rolled a 12 and failed to speed up R1
+w2 rolled a 17 and sped up R1
+w2 rolled a 8 and failed to speed up R1
+w2 rolled a 17 and sped up R1
+w2 rolled a 20 and sped up R1
+w2 rolled a 13 and sped up R1
+w2 rolled a 16 and sped up R1
+w2 rolled a 13 and sped up R1
+w2 rolled a 20 and sped up R1
+w2 rolled a 1 and failed to speed up R1
+w2 rolled a 20 and sped up R1
+w2 rolled a 13 and sped up R1
+w2 rolled a 2 and failed to speed up R1
+w2 rolled a 7 and failed to speed up R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 12 and does 40 damage to R1
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 20 and restored 6 mana
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 12 and restored 4 mana
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 17 and does 60 damage to R1
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 6 and does 40 damage to R1
+w2 rolled a 19 and does 60 damage to R1
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 12 and does 40 damage to R1
+w2 rolled a 1 and restored 1 mana
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 1 and restored 1 mana
+w2 rolled a 12 and does 40 damage to R1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 6 and does 40 damage to R1
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 15 and restored 4 mana
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 18 and restored 5 mana
+w2 rolled a 19 and does 60 damage to R1
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 10 and restored 3 mana
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 19 and does 60 damage to R1
+w2 rolled a 16 and restored 5 mana
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 17 and does 60 damage to R1
+w2 rolled a 6 and restored 2 mana
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 19 and restored 5 mana
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 2 and does 20 damage to R1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 14 and restored 4 mana
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 6 and does 40 damage to R1
+w2 rolled a 3 and restored 1 mana
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 14 and restored 4 mana
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 3 and restored 1 mana
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 11 and restored 3 mana
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 2 and does 20 damage to R1
+w2 rolled a 3 and restored 1 mana
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 19 and does 60 damage to R1
+w2 rolled a 12 and does 40 damage to R1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 18 and restored 5 mana
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 12 and restored 4 mana
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 17 and does 60 damage to R1
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 12 and does 40 damage to R1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 1 and restored 1 mana
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 15 and restored 4 mana
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 2 and does 20 damage to R1
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 6 and restored 2 mana
+w2 rolled a 19 and does 60 damage to R1
+w2 rolled a 6 and does 40 damage to R1
+w2 rolled a 11 and restored 3 mana
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 12 and restored 4 mana
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 2 and does 20 damage to R1
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 2 and restored 1 mana
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 16 and restored 5 mana
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 17 and does 60 damage to R1
+w2 rolled a 10 and restored 3 mana
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 4 and restored 2 mana
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 6 and does 40 damage to R1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 20 and restored 6 mana
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 12 and does 40 damage to R1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 2 and does 20 damage to R1
+w2 rolled a 19 and does 60 damage to R1
+w2 rolled a 18 and restored 5 mana
+w2 rolled a 19 and does 60 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 4 and restored 2 mana
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 6 and does 40 damage to R1
+w2 rolled a 19 and restored 5 mana
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 3 and restored 1 mana
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 2 and does 20 damage to R1
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 16 and restored 5 mana
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 18 and restored 5 mana
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 6 and does 40 damage to R1
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 12 and restored 4 mana
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 15 and restored 4 mana
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 8 and restored 3 mana
+w2 rolled a 17 and does 60 damage to R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 6 and restored 2 mana
+w2 rolled a 19 and does 60 damage to R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 19 and does 60 damage to R1
+w2 rolled a 20 and restored 6 mana
+w2 rolled a 17 and does 60 damage to R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 9 and restored 3 mana
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 13 and restored 4 mana
+w2 rolled a 6 and does 40 damage to R1
+w2 rolled a 19 and does 60 damage to R1
+w2 rolled a 6 and does 40 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 14 and restored 4 mana
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 12 and restored 4 mana
+w2 rolled a 17 and does 60 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 11 and restored 3 mana
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 13 and restored 4 mana
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 4 and restored 2 mana
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 1 and restored 1 mana
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 9 and restored 3 mana
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 12 and restored 4 mana
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 17 and does 60 damage to R1
+w2 rolled a 12 and does 40 damage to R1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 19 and does 60 damage to R1
+w2 rolled a 16 and restored 5 mana
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 17 and does 60 damage to R1
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 10 and restored 3 mana
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 19 and does 60 damage to R1
+w2 rolled a 8 and restored 3 mana
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 17 and does 60 damage to R1
+w2 rolled a 14 and restored 4 mana
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 9 and restored 3 mana
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 10 and restored 3 mana
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 12 and does 40 damage to R1
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 4 and restored 2 mana
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 2 and does 20 damage to R1
+w2 rolled a 11 and restored 3 mana
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 9 and restored 3 mana
+w2 rolled a 12 and does 40 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 2 and does 20 damage to R1
+w2 rolled a 19 and restored 5 mana
+w2 rolled a 12 and does 40 damage to R1
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 6 and restored 2 mana
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 15 and restored 4 mana
+w2 rolled a 2 and does 20 damage to R1
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 2 and does 20 damage to R1
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 14 and restored 4 mana
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 1 and restored 1 mana
+w2 rolled a 10 and does 40 damage to R1
+w2 rolled a 3 and restored 1 mana
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 20 and does 80 damage to R1
+w2 rolled a 17 and does 60 damage to R1
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 11 and does 40 damage to R1
+w2 rolled a 2 and does 20 damage to R1
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 12 and does 40 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 10 and restored 3 mana
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 8 and does 40 damage to R1
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 10 and restored 3 mana
+w2 rolled a 7 and does 40 damage to R1
+w2 rolled a 18 and does 60 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 8 and restored 3 mana
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 14 and does 60 damage to R1
+w2 rolled a 15 and does 60 damage to R1
+w2 rolled a 8 and restored 3 mana
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 4 and does 20 damage to R1
+w2 rolled a 13 and does 60 damage to R1
+w2 rolled a 20 and restored 6 mana
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 12 and does 40 damage to R1
+w2 rolled a 9 and does 40 damage to R1
+w2 rolled a 6 and does 40 damage to R1
+w2 rolled a 3 and does 20 damage to R1
+w2 rolled a 6 and does 40 damage to R1
+w2 rolled a 19 and restored 5 mana
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 1 and does 20 damage to R1
+w2 rolled a 16 and does 60 damage to R1
+w2 rolled a 5 and does 20 damage to R1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 12 and does 40 damage to M1
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 20 and restored 6 mana
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 12 and restored 4 mana
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 17 and does 60 damage to M1
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 6 and does 40 damage to M1
+w2 rolled a 19 and does 60 damage to M1
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 12 and does 40 damage to M1
+w2 rolled a 1 and restored 1 mana
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 1 and restored 1 mana
+w2 rolled a 12 and does 40 damage to M1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 6 and does 40 damage to M1
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 15 and restored 4 mana
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 18 and restored 5 mana
+w2 rolled a 19 and does 60 damage to M1
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 10 and restored 3 mana
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 19 and does 60 damage to M1
+w2 rolled a 16 and restored 5 mana
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 17 and does 60 damage to M1
+w2 rolled a 6 and restored 2 mana
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 19 and restored 5 mana
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 2 and does 20 damage to M1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 14 and restored 4 mana
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 6 and does 40 damage to M1
+w2 rolled a 3 and restored 1 mana
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 14 and restored 4 mana
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 3 and restored 1 mana
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 11 and restored 3 mana
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 2 and does 20 damage to M1
+w2 rolled a 3 and restored 1 mana
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 19 and does 60 damage to M1
+w2 rolled a 12 and does 40 damage to M1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 18 and restored 5 mana
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 12 and restored 4 mana
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 17 and does 60 damage to M1
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 12 and does 40 damage to M1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 1 and restored 1 mana
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 15 and restored 4 mana
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 2 and does 20 damage to M1
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 6 and restored 2 mana
+w2 rolled a 19 and does 60 damage to M1
+w2 rolled a 6 and does 40 damage to M1
+w2 rolled a 11 and restored 3 mana
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 12 and restored 4 mana
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 2 and does 20 damage to M1
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 2 and restored 1 mana
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 16 and restored 5 mana
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 17 and does 60 damage to M1
+w2 rolled a 10 and restored 3 mana
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 4 and restored 2 mana
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 6 and does 40 damage to M1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 20 and restored 6 mana
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 12 and does 40 damage to M1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 2 and does 20 damage to M1
+w2 rolled a 19 and does 60 damage to M1
+w2 rolled a 18 and restored 5 mana
+w2 rolled a 19 and does 60 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 4 and restored 2 mana
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 6 and does 40 damage to M1
+w2 rolled a 19 and restored 5 mana
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 3 and restored 1 mana
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 2 and does 20 damage to M1
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 16 and restored 5 mana
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 18 and restored 5 mana
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 6 and does 40 damage to M1
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 12 and restored 4 mana
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 15 and restored 4 mana
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 8 and restored 3 mana
+w2 rolled a 17 and does 60 damage to M1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 6 and restored 2 mana
+w2 rolled a 19 and does 60 damage to M1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 19 and does 60 damage to M1
+w2 rolled a 20 and restored 6 mana
+w2 rolled a 17 and does 60 damage to M1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 9 and restored 3 mana
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 13 and restored 4 mana
+w2 rolled a 6 and does 40 damage to M1
+w2 rolled a 19 and does 60 damage to M1
+w2 rolled a 6 and does 40 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 14 and restored 4 mana
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 12 and restored 4 mana
+w2 rolled a 17 and does 60 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 11 and restored 3 mana
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 13 and restored 4 mana
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 4 and restored 2 mana
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 1 and restored 1 mana
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 9 and restored 3 mana
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 12 and restored 4 mana
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 17 and does 60 damage to M1
+w2 rolled a 12 and does 40 damage to M1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 19 and does 60 damage to M1
+w2 rolled a 16 and restored 5 mana
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 17 and does 60 damage to M1
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 10 and restored 3 mana
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 19 and does 60 damage to M1
+w2 rolled a 8 and restored 3 mana
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 17 and does 60 damage to M1
+w2 rolled a 14 and restored 4 mana
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 9 and restored 3 mana
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 10 and restored 3 mana
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 12 and does 40 damage to M1
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 4 and restored 2 mana
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 2 and does 20 damage to M1
+w2 rolled a 11 and restored 3 mana
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 9 and restored 3 mana
+w2 rolled a 12 and does 40 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 2 and does 20 damage to M1
+w2 rolled a 19 and restored 5 mana
+w2 rolled a 12 and does 40 damage to M1
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 7 and restored 2 mana
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 6 and restored 2 mana
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 15 and restored 4 mana
+w2 rolled a 2 and does 20 damage to M1
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 2 and does 20 damage to M1
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 14 and restored 4 mana
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 1 and restored 1 mana
+w2 rolled a 10 and does 40 damage to M1
+w2 rolled a 3 and restored 1 mana
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 20 and does 80 damage to M1
+w2 rolled a 17 and does 60 damage to M1
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 17 and restored 5 mana
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 11 and does 40 damage to M1
+w2 rolled a 2 and does 20 damage to M1
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 5 and restored 2 mana
+w2 rolled a 12 and does 40 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 10 and restored 3 mana
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 8 and does 40 damage to M1
+w2 rolled a 5 and does 20 damage to M1
+w2 rolled a 10 and restored 3 mana
+w2 rolled a 7 and does 40 damage to M1
+w2 rolled a 18 and does 60 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 8 and restored 3 mana
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 14 and does 60 damage to M1
+w2 rolled a 15 and does 60 damage to M1
+w2 rolled a 8 and restored 3 mana
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 4 and does 20 damage to M1
+w2 rolled a 13 and does 60 damage to M1
+w2 rolled a 20 and restored 6 mana
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 12 and does 40 damage to M1
+w2 rolled a 9 and does 40 damage to M1
+w2 rolled a 6 and does 40 damage to M1
+w2 rolled a 3 and does 20 damage to M1
+w2 rolled a 6 and does 40 damage to M1
+w2 rolled a 19 and restored 5 mana
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 1 and does 20 damage to M1
+w2 rolled a 16 and does 60 damage to M1
+w2 rolled a 5 and does 20 damage to M1
+____________________________
+____________________________
+bB rolled a 6 and failed to power up R1
+bB rolled a 11 and failed to power up R1
+bB rolled a 12 and failed to power up R1
+bB rolled a 5 and failed to power up R1
+bB rolled a 14 and failed to power up R1
+bB rolled a 3 and failed to power up R1
+bB rolled a 8 and failed to power up R1
+bB rolled a 5 and failed to power up R1
+bB rolled a 20 and powered up R1
+bB rolled a 1 and failed to power up R1
+bB rolled a 6 and failed to power up R1
+bB rolled a 11 and failed to power up R1
+bB rolled a 12 and failed to power up R1
+bB rolled a 5 and failed to power up R1
+bB rolled a 14 and failed to power up R1
+bB rolled a 3 and failed to power up R1
+bB rolled a 8 and failed to power up R1
+bB rolled a 5 and failed to power up R1
+bB rolled a 20 and powered up R1
+bB rolled a 1 and failed to power up R1
+bB rolled a 6 and does 0 damage to R1
+bB rolled a 7 and does 120 damage to R1
+bB rolled a 4 and does 60 damage to R1
+bB rolled a 1 and does 110 damage to R1
+bB rolled a 4 and does 110 damage to R1
+bB rolled a 7 and does 400 damage to R1
+bB rolled a 8 and does 360 damage to R1
+bB rolled a 5 and does 200 damage to R1
+bB rolled a 8 and does 440 damage to R1
+bB rolled a 17 and does 840 damage to R1
+bB rolled a 14 and does 0 damage to R1
+bB rolled a 17 and does 60 damage to R1
+bB rolled a 20 and does 160 damage to R1
+bB rolled a 11 and does 120 damage to R1
+bB rolled a 18 and does 390 damage to R1
+bB rolled a 7 and does 260 damage to R1
+bB rolled a 8 and does 240 damage to R1
+bB rolled a 7 and does 300 damage to R1
+bB rolled a 4 and does 220 damage to R1
+bB rolled a 7 and does 460 damage to R1
+
+Party2 : MeleeWarrior:M1:health=10,power=10,speed=10,armor=10
+Ranger:R1:health=10,power=10,speed=10,numShots=10
+Support:S1:health=10,power=10,speed=10,mana=2
+Barbarian:MeleeWarrior:b1:health=10,power=10,speed=10,armor=10,rageMeters=[0,0,0,0,0,0,0,0,0,0]
+Rogue:MeleeWarrior:r1:health=10,power=10,speed=10,armor=10,stealthTimer=20
+SiegeWeapon:Ranger:s1:health=10,power=10,speed=10,numShots=5,ammo=[-,-,-,-,-]
+Wizard:Ranger:w1:health=10,power=10,speed=10,numShots=10,mana=1
+Cleric:Support:c1:health=10,power=10,speed=10,mana=2,faith=10
+Druid:Support:d1:health=10,power=10,speed=10,mana=10,treeants=[]
+
+---Test4: assignment copy constructors
+MeleeWarrior:M2:health=20,power=20,speed=20,armor=20
+Ranger:R2:health=20,power=20,speed=20,numShots=20
+Support:S2:health=20,power=20,speed=20,mana=20
+Barbarian:MeleeWarrior:b2:health=20,power=20,speed=20,armor=20,rageMeters=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+Rogue:MeleeWarrior:r2:health=20,power=20,speed=20,armor=20,stealthTimer=20
+SiegeWeapon:Ranger:s2:health=20,power=20,speed=20,numShots=3,ammo=[-,-,-]
+Wizard:Ranger:w2:health=20,power=20,speed=20,numShots=20,mana=5
+Cleric:Support:c2:health=20,power=20,speed=20,mana=5,faith=2
+Druid:Support:d2:health=20,power=20,speed=20,mana=20,treeants=[]

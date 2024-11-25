@@ -1,0 +1,394 @@
+testing prev and next for tasks : 
+Task 1 next information:
+b
+2
+60
+1
+Task 2 prev information: 
+a
+1
+55
+0
+Testing copy constructor: 
+e
+9
+75
+1
+
+Testing Todo: 
+Testing details: 
+a
+b
+c
+d
+e
+
+Testing find Task: 
+d
+c
+
+Testing Weekly: 
+Task: a Data: 55 COMPLETED
+Task: b Data: 60 COMPLETED
+Task: c Data: 65 COMPLETED
+Task: d Data: 70 COMPLETED
+Task: e Data: 75 COMPLETED
+
+Task: a Data: 55 COMPLETED
+Task: b Data: 60 COMPLETED
+Task: c Data: 65 COMPLETED
+Task: d Data: 70 COMPLETED
+
+Task: b Data: 60 COMPLETED
+Task: c Data: 65 COMPLETED
+Task: d Data: 70 COMPLETED
+
+Task: b Data: 60 COMPLETED
+Task: d Data: 70 COMPLETED
+
+New tail: d
+new head: b
+number of tasks: 2
+Task: b Data: 60 COMPLETED
+Task: d Data: 70 COMPLETED
+
+Testing doTasks multiple times:
+Task: b Data: 60 COMPLETED
+Task: d Data: 70 COMPLETED
+Task: b Data: 60 COMPLETED
+Task: d Data: 70 COMPLETED
+Task: b Data: 60 COMPLETED
+Task: d Data: 70 COMPLETED
+
+
+Testing priorityList:
+Task: b Priority: 2 Data: 60 COMPLETED
+
+Task: c Priority: 6 Data: 65 COMPLETED
+Task: d Priority: 4 Data: 70 COMPLETED
+Task: e Priority: 9 Data: 75 COMPLETED
+
+Testing history Class: 
+Task: d Priority: 4 Data: 70 UNDID
+Task: c Priority: 6 Data: 65 UNDID
+Task: b Priority: 2 Data: 60 UNDID
+Task: a Priority: 1 Data: 55 UNDID
+
+Testing manager: 
+Testing newTask: 
+Task 74
+Task 29
+Task 79
+Task 6
+Task 68
+Task 21
+a
+
+set weekly: 
+Task: Task 29 Data: 172 COMPLETED
+Task: Task 6 Data: 615 COMPLETED
+Task: Task 74 Data: 64 COMPLETED
+Task: Task 79 Data: 371 COMPLETED
+
+What is left in todo:
+Task 68
+Task 21
+a
+
+set Priority: 
+What is left in todo:
+
+Testing doWeekly: 
+Task: Task 29 Data: 172 COMPLETED
+Task: Task 6 Data: 615 COMPLETED
+Task: Task 74 Data: 64 COMPLETED
+Task: Task 79 Data: 371 COMPLETED
+Task: Task 29 Data: 172 COMPLETED
+Task: Task 6 Data: 615 COMPLETED
+Task: Task 74 Data: 64 COMPLETED
+Task: Task 79 Data: 371 COMPLETED
+
+Testing doPriority: 
+Task: Task 68 Priority: 0 Data: 532 COMPLETED
+Task: a Priority: 1 Data: 55 COMPLETED
+Task: Task 21 Priority: 9 Data: 462 COMPLETED
+
+
+
+void jordan()
+{
+    Task<int> t1(1, "a", false, 55);
+    Task<int> t2(2, "b", true, 60);
+    Task<int> t3(6, "c", false, 65);
+    Task<int> t4(4, "d", true, 70);
+    Task<int> t5(9, "e", true, 75);
+
+    t1.setNext(&t2);
+    t2.setPrev(&t1);
+    std::cout << "testing prev and next for tasks : " << std::endl;
+    std::cout << "Task 1 next information:" << std::endl;
+    std::cout << t1.getNext()->getDescription() << std::endl;
+    std::cout << t1.getNext()->getPriority() << std::endl;
+    std::cout << t1.getNext()->getData() << std::endl;
+    std::cout << t1.getNext()->getRepeat() << std::endl;
+
+    std::cout << "Task 2 prev information: " << std::endl;
+    std::cout << t2.getPrev()->getDescription() << std::endl;
+    std::cout << t2.getPrev()->getPriority() << std::endl;
+    std::cout << t2.getPrev()->getData() << std::endl;
+    std::cout << t2.getPrev()->getRepeat() << std::endl;
+
+    std::cout << "Testing copy constructor: " << std::endl;
+    Task<int> copyT(t5);
+    std::cout << copyT.getDescription() << std::endl;
+    std::cout << copyT.getPriority() << std::endl;
+    std::cout << copyT.getData() << std::endl;
+    std::cout << copyT.getRepeat() << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "Testing Todo: " << std::endl;
+    std::cout << "Testing detials: " << std::endl;
+    Todo<int> todo1;
+    todo1.addTask(&t1);
+    todo1.addTask(&t2);
+    todo1.addTask(&t3);
+    todo1.addTask(&t4);
+    todo1.addTask(&t5);
+
+    std::cout << todo1.doTasks() << std::endl;
+    std::cout << "Testing removing tasks: " << std::endl;
+    todo1.removeTask(&t1);
+    todo1.removeTask(&t5);
+    todo1.removeTask(&t3);
+    std::cout << todo1.doTasks() << std::endl;
+
+    todo1.addTask(&t1);
+    todo1.addTask(&t5);
+    todo1.addTask(&t3);
+
+    std::cout << "Testing find Task: " << std::endl;
+    std::cout << todo1.findTask("d")->getDescription() << std::endl;
+    std::cout << todo1.findTask(6)->getDescription() << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "Testing Weekly: " << std::endl;
+
+    WeeklyTasks<int> w1;
+    w1.addTask(&t1);
+    w1.addTask(&t5);
+    w1.addTask(&t3);
+    w1.addTask(&t2);
+    w1.addTask(&t4);
+
+    w1.removeTask(&t5);
+    w1.removeTask(&t1);
+    w1.removeTask(&t3);
+    Task<int> *tailt = w1.getTail();
+    std::cout << "New tail: " << tailt->getDescription() << std::endl;
+    std::cout << "new head: " << tailt->getNext()->getDescription() << std::endl;
+    std::cout << "number of tasks: " << w1.getNumTasks() << std::endl;
+    std::cout << w1.doTasks() << std::endl;
+    std::cout << "Testing doTasks multiple times:" << std::endl;
+    std::cout << w1.doTasks(3) << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "Testing priorityList:" << std::endl;
+    PriorityList<int> p1;
+    p1.addTask(&t1);
+    p1.addTask(&t2);
+    p1.addTask(&t3);
+    p1.addTask(&t4);
+    p1.addTask(&t5);
+
+    p1.removeTask();
+    std::cout << p1.doNTasks(1) << std::endl;
+    std::cout << p1.doTasks() << std::endl;
+
+    std::cout << "Testing history Class: " << std::endl;
+    History<int> h1;
+    h1.addTask(&t1);
+    h1.addTask(&t2);
+    h1.addTask(&t3);
+    h1.addTask(&t4);
+    h1.addTask(&t5);
+
+    Task<int> *deleteT = h1.removeTask();
+    delete deleteT;
+    std::cout << h1.doTasks() << std::endl;
+
+    std::cout << "Testing manager: " << std::endl;
+    TaskManager<int> tm1("tasks.txt");
+    std::cout << "Testing newTask: " << std::endl;
+    tm1.newTask(&t1);
+    std::cout << tm1.getTodo()->doTasks() << std::endl;
+
+    std::cout << "set weekly: " << std::endl;
+    tm1.setWeeklyTasks();
+    std::cout << tm1.getWeekly()->doTasks() << std::endl;
+    std::cout << "What is left in todo:" << std::endl;
+    std::cout << tm1.getTodo()->doTasks() << std::endl;
+
+    std::cout << "set Priority: " << std::endl;
+    tm1.setPriority();
+    // std::cout<<tm1.getPriority()->doTasks()<<std::endl;
+    // Needs to be commented out for doPriority as doPriority uses it
+    std::cout << "What is left in todo:" << std::endl;
+    std::cout << tm1.getTodo()->doTasks() << std::endl;
+
+    std::cout << "Testing doWeekly: " << std::endl;
+    std::cout << tm1.doWeekly(2) << std::endl;
+
+    std::cout << "Testing doPriority: " << std::endl;
+    std::cout << tm1.doPriority(3) << std::endl;
+
+    // std::cout<<tm1.getHistory()->doTasks()<<std::endl;
+
+    std::cout << tm1.undoTasks(false) << std::endl;
+    std::cout << tm1.undoTasks(true) << std::endl;
+}
+void jordandynamic()
+{
+    // Allocate tasks on the heap
+    Task<int> *t1 = new Task<int>(1, "a", false, 55);
+    Task<int> *t2 = new Task<int>(2, "b", true, 60);
+    Task<int> *t3 = new Task<int>(6, "c", false, 65);
+    Task<int> *t4 = new Task<int>(4, "d", true, 70);
+    Task<int> *t5 = new Task<int>(9, "e", true, 75);
+
+    t1->setNext(t2);
+    t2->setPrev(t1);
+
+    std::cout << "testing prev and next for tasks : " << std::endl;
+    std::cout << "Task 1 next information:" << std::endl;
+    std::cout << t1->getNext()->getDescription() << std::endl;
+    std::cout << t1->getNext()->getPriority() << std::endl;
+    std::cout << t1->getNext()->getData() << std::endl;
+    std::cout << t1->getNext()->getRepeat() << std::endl;
+
+    std::cout << "Task 2 prev information: " << std::endl;
+    std::cout << t2->getPrev()->getDescription() << std::endl;
+    std::cout << t2->getPrev()->getPriority() << std::endl;
+    std::cout << t2->getPrev()->getData() << std::endl;
+    std::cout << t2->getPrev()->getRepeat() << std::endl;
+
+    std::cout << "Testing copy constructor: " << std::endl;
+    Task<int> *copyT = new Task<int>(*t5);
+    std::cout << copyT->getDescription() << std::endl;
+    std::cout << copyT->getPriority() << std::endl;
+    std::cout << copyT->getData() << std::endl;
+    std::cout << copyT->getRepeat() << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "Testing Todo: " << std::endl;
+    std::cout << "Testing details: " << std::endl;
+    Todo<int> *todo1 = new Todo<int>();
+    todo1->addTask(t1);
+    todo1->addTask(t2);
+    todo1->addTask(t3);
+    todo1->addTask(t4);
+    todo1->addTask(t5);
+
+    std::cout << todo1->doTasks() << std::endl;
+    // std::cout << "Testing removing tasks: " << std::endl;
+    // todo1->removeTask(t1);
+    // todo1->removeTask(t5);
+    // todo1->removeTask(t3);
+    // std::cout << todo1->doTasks() << std::endl;
+
+    // todo1->addTask(t1);
+    // todo1->addTask(t5);
+    // todo1->addTask(t3);
+
+    std::cout << "Testing find Task: " << std::endl;
+    std::cout << todo1->findTask("d")->getDescription() << std::endl;
+    std::cout << todo1->findTask(6)->getDescription() << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "Testing Weekly: " << std::endl;
+
+    WeeklyTasks<int> *w1 = new WeeklyTasks<int>();
+    w1->addTask(t1);
+    w1->addTask(t5);
+    w1->addTask(t3);
+    w1->addTask(t2);
+    w1->addTask(t4);
+    std::cout << w1->doTasks() << std::endl;
+
+    w1->removeTask(w1->getTail());
+    std::cout << w1->doTasks() << std::endl;
+    w1->removeTask(w1->getTail()->getNext());
+    std::cout << w1->doTasks() << std::endl;
+    w1->removeTask(w1->getTail()->getNext()->getNext());
+    std::cout << w1->doTasks() << std::endl;
+    Task<int> *tailt = w1->getTail();
+    std::cout << "New tail: " << tailt->getDescription() << std::endl;
+    std::cout << "new head: " << tailt->getNext()->getDescription() << std::endl;
+    std::cout << "number of tasks: " << w1->getNumTasks() << std::endl;
+    std::cout << w1->doTasks() << std::endl;
+    std::cout << "Testing doTasks multiple times:" << std::endl;
+    std::cout << w1->doTasks(3) << std::endl;
+    std::cout << std::endl;
+
+    std::cout << "Testing priorityList:" << std::endl;
+    PriorityList<int> *p1 = new PriorityList<int>();
+    p1->addTask(t1);
+    p1->addTask(t2);
+    p1->addTask(t3);
+    p1->addTask(t4);
+    p1->addTask(t5);
+
+    p1->removeTask();
+    std::cout << p1->doNTasks(1) << std::endl;
+    std::cout << p1->doTasks() << std::endl;
+
+    std::cout << "Testing history Class: " << std::endl;
+    History<int> *h1 = new History<int>();
+    h1->addTask(t1);
+    h1->addTask(t2);
+    h1->addTask(t3);
+    h1->addTask(t4);
+    h1->addTask(t5);
+
+    Task<int> *deleteT = h1->removeTask();
+    delete deleteT;
+    std::cout << h1->doTasks() << std::endl;
+
+    std::cout << "Testing manager: " << std::endl;
+    TaskManager<int> *tm1 = new TaskManager<int>("tasks.txt");
+    std::cout << "Testing newTask: " << std::endl;
+    tm1->newTask(t1);
+    std::cout << tm1->getTodo()->doTasks() << std::endl;
+
+    std::cout << "set weekly: " << std::endl;
+    tm1->setWeeklyTasks();
+    std::cout << tm1->getWeekly()->doTasks() << std::endl;
+    std::cout << "What is left in todo:" << std::endl;
+    std::cout << tm1->getTodo()->doTasks() << std::endl;
+
+    std::cout << "set Priority: " << std::endl;
+    tm1->setPriority();
+    std::cout << "What is left in todo:" << std::endl;
+    std::cout << tm1->getTodo()->doTasks() << std::endl;
+
+    std::cout << "Testing doWeekly: " << std::endl;
+    std::cout << tm1->doWeekly(2) << std::endl;
+
+    std::cout << "Testing doPriority: " << std::endl;
+    std::cout << tm1->doPriority(3) << std::endl;
+
+    std::cout << tm1->undoTasks(false) << std::endl;
+    std::cout << tm1->undoTasks(true) << std::endl;
+
+    // Cleanup dynamically allocated objects
+    // delete t1;
+    // delete t2;
+    // delete t3;
+    // delete t4;
+    // delete t5;
+    // delete copyT;
+    //  delete todo1;
+  //  delete w1;
+    delete p1;
+    delete h1;
+  //  delete tm1;
+}

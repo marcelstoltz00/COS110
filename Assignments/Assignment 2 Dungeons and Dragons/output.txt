@@ -1,0 +1,10 @@
+SiegeWeapon1 rolled a 2 and refilled 1 ammo
+SiegeWeapon1 rolled a 11 and does 6 damage to Druid1
+Druid1 rolled a 3 and summons 1 treeants with a lifetime of 20
+Druid1 rolled a 16 and summons 3 treeants with a lifetime of 20
+Druid1: treeant 0 does 100 damage to SiegeWeapon1
+Druid1: treeant 1 does 100 damage to SiegeWeapon1
+Druid1: treeant 2 does 100 damage to SiegeWeapon1
+Druid1: treeant 3 does 100 damage to SiegeWeapon1
+Party 1 : 
+Party 2 : Druid:Support:Druid1:health=44,power=5,speed=2,mana=20,treeants=[19,19,19,19]

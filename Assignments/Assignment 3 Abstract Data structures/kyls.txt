@@ -1,0 +1,388 @@
+#include "todo.h"
+#include "weekly.h"
+#include "priority.h"
+#include "history.h"
+#include "manager.h"
+#include <iostream>
+
+using namespace std;
+
+void testingTODO() {
+    Todo<int> todoList;
+
+    std::cout << "=== Testing Todo List ===" << std::endl;
+
+    // Test 1: Add tasks
+    Task<int> task1(1, "Task 1 Description", false, 10);
+    Task<int> task2(2, "Task 2 Description", true, 20);
+    Task<int> task3(3, "Task 3 Description", false, 30);
+
+    std::cout << "Adding Task 1: " << (todoList.addTask(&task1) ? "Success" : "Failed") << std::endl;
+    std::cout << "Adding Task 2: " << (todoList.addTask(&task2) ? "Success" : "Failed") << std::endl;
+    std::cout << "Adding Task 3: " << (todoList.addTask(&task3) ? "Success" : "Failed") << std::endl;
+
+    std::cout << "\nCurrent Todo List after adding tasks:\n";
+    std::cout << todoList.doTasks() << std::endl;
+    
+
+    // Test 2: Find tasks by priority
+    Task<int>* foundTask = todoList.findTask(2);
+    if (foundTask) {
+        std::cout << "Found Task with Priority 2: " << foundTask->getDescription() << std::endl;
+    } else {
+        std::cout << "Task with Priority 2 not found." << std::endl;
+    }
+
+    foundTask = todoList.findTask(5);
+    if (foundTask) {
+        std::cout << "Found Task with Priority 5: " << foundTask->getDescription() << std::endl;
+    } else {
+        std::cout << "Task with Priority 5 not found." << std::endl;
+    }
+
+    // Test 3: Find tasks by description
+    foundTask = todoList.findTask("Task 3 Description");
+    if (foundTask) {
+        std::cout << "Found Task with Description 'Task 3 Description': " << foundTask->getDescription() << std::endl;
+    } else {
+        std::cout << "Task with Description 'Task 3 Description' not found." << std::endl;
+    }
+
+    foundTask = todoList.findTask("Nonexistent Task");
+    if (foundTask) {
+        std::cout << "Found Task with Description 'Nonexistent Task': " << foundTask->getDescription() << std::endl;
+    } else {
+        std::cout << "Task with Description 'Nonexistent Task' not found." << std::endl;
+    }
+
+    // Test 4: Remove tasks
+    std::cout << "\nRemoving Task 2 (should be successful): ";
+    if (todoList.removeTask(todoList.findTask(2))) {
+        std::cout << "Success" << std::endl;
+    } else {
+        std::cout << "Failed" << std::endl;
+    }
+
+    std::cout << "\nCurrent Todo List after removing Task 2:\n";
+    std::cout << todoList.doTasks() << std::endl;
+
+    std::cout << "Removing Head (Task 1): ";
+    if (todoList.removeTask(todoList.getHead())) {
+        std::cout << "Success" << std::endl;
+    } else {
+        std::cout << "Failed" << std::endl;
+    }
+
+    std::cout << "Removing Tail (Task 3): ";
+    if (todoList.removeTask(todoList.getTail())) {
+        std::cout << "Success" << std::endl;
+    } else {
+        std::cout << "Failed" << std::endl;
+    }
+
+    std::cout << "\nCurrent Todo List after removing all tasks:\n";
+    std::cout << todoList.doTasks() << std::endl;
+
+    // Test 5: Add after all tasks have been removed
+    std::cout << "\nAdding a new Task after clearing the list: ";
+    Task<int> task4(4, "Task 4", true, 40);
+    std::cout << (todoList.addTask(&task4) ? "Success" : "Failed") << std::endl;
+
+    std::cout << "\nCurrent Todo List after re-adding:\n";
+    std::cout << todoList.doTasks() << std::endl;
+    todoList.removeTask(todoList.getHead());
+}
+
+
+
+void testPriority(){
+    std::cout << "\nTesting Priority List\n";
+    PriorityList<int> pList;
+    Task<int> taskA(1, "Apple Task", false, 10);
+    Task<int> taskB(2, "Banana Task", true, 20);
+    Task<int> taskD(4, "Date Task", false, 40);
+    Task<int> taskA2(3, "Apple Task", true, 30); // Duplicate description
+    Task<int> taskE(4,"elephant task",true,30);
+
+    std::cout << pList.addTask(&taskA) << std::endl;
+    std::cout << pList.addTask(&taskB) << std::endl;
+    std::cout << pList.addTask(&taskD) << std::endl;
+    std::cout << pList.addTask(&taskA2) << std::endl;
+    std::cout << pList.addTask(&taskE) << std::endl;
+    cout << pList.getNumTasks() << endl;
+    //pList.print();
+
+    cout << pList.removeTask() << endl;
+    cout << pList.getNumTasks() << endl;
+    //pList.print();
+
+     std::cout << pList.doNTasks(2) << std::endl;
+    cout << "HERE" << endl;
+    //pList.print();
+    std::cout << pList.doTasks() << std::endl;
+    
+    
+
+}
+
+void testHistory(){
+    std::cout << "\nTesting History List\n";
+    History<int> hist;
+    Task<int> taskA(1, "Apple Task", false, 10);
+    Task<int> taskB(2, "Banana Task", true, 20);
+    Task<int> taskD(4, "Date Task", false, 40);
+    Task<int> taskA2(3, "Apple Task", true, 30); // Duplicate description
+    Task<int> taskE(4,"elephant task",true,30);
+
+    std::cout << hist.addTask(&taskA) << std::endl;
+    std::cout << hist.addTask(&taskB) << std::endl;
+    std::cout << hist.addTask(&taskD) << std::endl;
+    std::cout << hist.addTask(&taskA2) << std::endl;
+    std::cout << hist.addTask(&taskE) << std::endl;
+
+    //hist.print();
+     Task<int>* temp = hist.removeTask();
+    cout << temp << endl;
+    cout << hist.getNumTasks() << endl;
+    //hist.print();
+    cout << hist.undoLatest() << endl;
+    cout << hist.getNumTasks() << endl;
+    //hist.print();
+    delete temp;
+
+    cout << hist.doTasks() << endl;
+    //hist.print();
+
+    std::cout << hist.addTask(&taskA) << std::endl;
+    std::cout << hist.addTask(&taskB) << std::endl;
+    std::cout << hist.addTask(&taskD) << std::endl;
+    std::cout << hist.addTask(&taskA2) << std::endl;
+    std::cout << hist.addTask(&taskE) << std::endl;
+
+
+    std::cout << hist.undoLatest() << std::endl;
+    std::cout << std::endl << hist.doTasks() << std::endl;
+
+    std::cout << hist.undoLatest() << std::endl;
+    Task<int>* temp2 = hist.removeTask();
+    
+    delete temp2;
+
+    std::cout << hist.addTask(&taskA) << std::endl;
+    std::cout << hist.undoLatest() << std::endl;
+
+    Task<int>* temp3 = hist.removeTask();
+    
+    delete temp3;
+
+    History<int> hist2;
+    std::cout << hist2.undoLatest() << std::endl;
+}
+
+void testingWeekly() {
+    WeeklyTasks<int> weeklyList;
+
+    std::cout << "=== Testing WeeklyTasks List ===" << std::endl;
+
+    // Test 1: Add tasks in non-alphabetical order
+    Task<int> taskA(1, "Apple Task", false, 10);
+    Task<int> taskB(2, "Banana Task", true, 20);
+    Task<int> taskD(4, "Date Task", false, 40);
+    Task<int> taskA2(3, "Apple Task", true, 30); // Duplicate description
+
+    std::cout << "Adding Task 'Apple Task': " << (weeklyList.addTask(&taskA) ? "Success" : "Failed") << std::endl;
+    std::cout << "Adding Task 'Banana Task': " << (weeklyList.addTask(&taskB) ? "Success" : "Failed") << std::endl;
+    std::cout << "Adding Task 'Date Task': " << (weeklyList.addTask(&taskD) ? "Success" : "Failed") << std::endl;
+    std::cout << "Adding another 'Apple Task': " << (weeklyList.addTask(&taskA2) ? "Success" : "Failed") << std::endl;
+
+    std::cout << "\nCurrent WeeklyTasks List after adding tasks:\n";
+    std::cout << weeklyList.doTasks() << std::endl;
+
+    std::cout << "TESTING DO TASKS REPITITIONS: " << std::endl;
+    std::cout << weeklyList.doTasks(2) << std::endl;
+
+    // Expected order: Apple Task → Apple Task → Banana Task → Date Task
+
+    // Test 2: Verify order of tasks based on description by checking doTasks output
+    std::string tasksListOutput = weeklyList.doTasks();
+    if (tasksListOutput.find("Apple Task") != std::string::npos && 
+        tasksListOutput.find("Banana Task") != std::string::npos &&
+        tasksListOutput.find("Date Task") != std::string::npos) {
+        std::cout << "Order verified: Alphabetical order is correct." << std::endl;
+    } else {
+        std::cout << "Order check failed: Alphabetical order is incorrect." << std::endl;
+    }
+
+    //remove the tasks from the head onwards
+    int numTimes = weeklyList.getNumTasks();
+    for (int i = 0; i < numTimes; i++)
+    {
+        std::cout << "removing position: " << i << " it was a " << weeklyList.removeTask(weeklyList.getHead()) << std::endl;
+    }
+    
+
+    //try to remove something not in the list
+    std::cout << "REMOVING SOMETHING NOT IN THE LIST: " << weeklyList.removeTask(weeklyList.getHead()) << std::endl;
+
+    // // Test 3: Remove specific tasks and verify structure
+    // std::cout << "\nRemoving Task head";
+    // if (weeklyList.removeTask(weeklyList.getTail()->getNext())) { // Banana Task should be at head->next
+    //     std::cout << "Success" << std::endl;
+    // } else {
+    //     std::cout << "Failed" << std::endl;
+    // }
+
+    // std::cout << "\nWeeklyTasks List after removing head of list:\n";
+    // std::cout << weeklyList.doTasks() << std::endl;
+
+    // // Expected order: Apple Task → Apple Task → Date Task
+
+    // // Test 4: Remove all tasks to test edge case of empty list
+    // std::cout << "Removing Task 'Apple Task' (head): ";
+    // if (weeklyList.removeTask(weeklyList.getTail()->getNext())) {
+    //     std::cout << "Success" << std::endl;
+    // } else {
+    //     std::cout << "Failed" << std::endl;
+    // }
+
+    // std::cout << "Removing Task 'Apple Task' (next in list): ";
+    // if (weeklyList.removeTask(weeklyList.getTail()->getNext())) {
+    //     std::cout << "Success" << std::endl;
+    // } else {
+    //     std::cout << "Failed" << std::endl;
+    // }
+
+    // std::cout << "Removing Task 'Date Task' (tail): ";
+    // if (weeklyList.removeTask(weeklyList.getTail())) {
+    //     std::cout << "Success" << std::endl;
+    // } else {
+    //     std::cout << "Failed" << std::endl;
+    // }
+
+    std::cout << "\nWeeklyTasks List after removing all tasks:\n";
+    std::cout << weeklyList.doTasks() << std::endl;
+
+    // Test 5: Add new tasks after list has been emptied
+    std::cout << "\nAdding a new 'Cherry Task' after clearing the list: ";
+    Task<int> taskC(5, "Cherry Task", true, 50);
+    std::cout << (weeklyList.addTask(&taskC) ? "Success" : "Failed") << std::endl;
+
+    std::cout << "\nWeeklyTasks List after re-adding:\n";
+    std::cout << weeklyList.doTasks() << std::endl;
+}
+
+void testManager(){
+    std::cout << "\nTesting Task Manager\n";
+    TaskManager<int> manager("tasks.txt");
+
+    manager.setWeeklyTasks();
+    std::cout << manager.getWeekly()->doTasks() << std::endl; //broken
+
+    manager.setPriority();
+    std::cout << manager.getPriority()->doTasks() << std::endl; //works
+
+    std::cout << manager.getTodo()->doTasks() << std::endl; //works
+
+
+    TaskManager<int> m2("tasks.txt");
+    cout << "TESTING THE DO FUNCTIONS OF MANAGER: " << endl;
+    cout << "setting the weekly and priority lists: " << endl;
+     m2.setWeeklyTasks();
+    m2.setPriority();
+    cout << "SETTING COMPLETE" << endl;
+
+    cout << "Printing initial lists: " << endl;
+    //m2.getPriority()->print();
+    cout << endl;
+
+    cout << "doing the first 3 tasks in priority: " << endl;
+    cout << m2.doPriority(3) << endl;
+    cout << endl;
+
+    cout << "print the new priority list and history stack: " << endl;
+    //m2.getPriority()->print();
+    //cout << m2.doWeekly(2) << endl;
+   // m2.getHistory()->print();
+    cout << endl;
+
+    cout << "undo just one task: " << endl;
+    m2.undoTasks(false);
+    //m2.getPriority()->print();
+    //m2.getHistory()->print();
+    cout << endl;
+
+    cout << "undo all tasks" << endl;
+    m2.undoTasks(true);
+    //m2.getPriority()->print();
+    //m2.getHistory()->print();
+
+
+}
+
+void testMan2(){
+    std::cout << "\nTesting Task Manager\n";
+    TaskManager<int> manager("tasks2.txt");
+
+    manager.setPriority();
+    manager.setWeeklyTasks();
+    cout <<manager.doPriority(10) << endl;
+    cout <<manager.doWeekly(1) << endl;
+    cout <<manager.undoTasks(false) << endl;
+    cout <<manager.doPriority(manager.getPriority()->getNumTasks() - 1) << endl;
+    cout << manager.undoTasks(true) << endl;
+}
+
+int main(){
+     testingTODO();
+      testingWeekly();
+    testPriority();
+    testHistory();
+    testManager();
+    testMan2();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // TaskManager<int> m2("tasks.txt");
+    // cout << "TESTING THE DO FUNCTIONS OF MANAGER: " << endl;
+
+    //  m2.setWeeklyTasks();
+    // m2.setPriority();
+    //std::cout << m2.getPriority()->doTasks() << std::endl;
+
+    //cout << m2.doPriority(2) << endl; //broken
+    //cout << "HEREH" << endl;
+    //cout << m2.doWeekly(2) << endl; 
+
+//    cout << m2.getHistory() << endl; //if i run this i can prove history is null
+//    History<int>* hist = m2.getHistory();
+//    if (!hist)
+//    {
+//     cout << "IT IS NULL" << endl;
+//    }
+//    cout << hist->undoLatest() << endl;
+
+    // cout << "\nTESTING MANAGER 2 \n" << endl;
+    // TaskManager<int> m2("tasks.txt");
+    // m2.setWeeklyTasks();
+    // m2.setPriority();
+    // cout << "DONE" << endl;
+
+
+
+

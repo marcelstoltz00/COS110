@@ -1,0 +1,6 @@
+15#Buy groceries#False#20
+3#Call the doctor#True#10
+30#Complete homework#False#15
+5#Water the plants#True#30
+0#Submit project#False#25
+2#A#True#35
